@@ -1,0 +1,223 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Budgit 2.0</title>
+        <link href="main.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <div class="navbar">
+            <a href="#hero">Home</a>
+            <div class="subnav">
+            <a href="#current-month-page">Months</a>
+            <!-- <div class="subnav-content">
+                <a href="#current-month-page">January</a>
+                <a href="#current-month-page">February</a>
+                <a href="#current-month-page">March</a>
+                <a href="#current-month-page">April</a>
+                <a href="#current-month-page">May</a>
+                <a href="#current-month-page">June</a>
+            </div> -->
+            </div>
+            <a href="#goals-page">Goals</a>
+            <a href="#hero">Home</a>
+            <a href="#add-page">Add stuff</a>
+            <a href="#sign-in-page">Login/signup</a>
+        </div>
+
+    <!-- LANDING -->
+        <section id="sign-in-page">
+
+        <section class="signup">
+            <h1>Sign Up for BudgIt 2.0</h1>
+            <form>
+                <label for="">Full Name</label>
+                <input type="text">
+                <label for="">Email</label>
+                <input type="email">
+                <button>Enter</button>
+            </form>
+        </section>
+
+        <!-- LOGIN -->
+        <section class="login">
+            <h1>Login to BudgIt 2.0</h1>
+            <form>
+                <label for="">Email</label>
+                <input type="email">
+                <label for="">Password</label>
+                <input type="text">
+                <button>Enter</button>
+            </form>
+        </section>
+
+        <!-- HERO -->
+        <section id="hero">
+            <div class="hero-inner">
+                <h1>Budgit 2.0</h1>
+                <h2>An easy way to set financial goals & stay on budget</h2>
+                <button>Sign Up Now</button>
+                <a href="">Already have an account?</a>
+            </div>
+        </section>
+
+        </section>
+
+
+    <!-- ADD -->
+        <section id="add-page">
+        <h1>Add {budget/fixed/unexpected/goal}</h1>
+
+        <!-- ADD MONTH'S BUDGET -->
+        <section class="add-monthly-budget">
+            <form action="">
+                <h2>Add {current month}'s budget</h2>
+                <label for="monthly-budget">{Current month}'s budget': </label>
+                <input type="number">
+                <label for="monthly-save-goal">How much I would like to save by the end of {Current month}: $</label>
+                <input type="number">
+                </label>
+            </form>
+        </section>
+
+        <!-- ADD EXPENSE -->
+        <section class="add-expense">
+            <form action="" class="add-expense-form">
+                <h2>Add fixed expense</h2>
+                <select name="fixed-expenses" id="">
+                    <option value="Mortgage/Rent"></option>
+                    <option value="Home/Rent insurance"></option>
+                    <option value="Auto Insurance"></option>
+                    <option value="Health Insurance"></option>
+                    <option value="Electricity"></option>
+                    <option value="Groceries/toiletries/other essentials"></option>
+                    <option value="Fuel"></option>
+                    <option value="Student loan payments"></option>
+                    <option value="Cable/Internet"></option>
+                    <option value="Auto"></option>
+                    <option value="Streaming Services"></option>
+                    <option value="TV/Internet"></option>
+                    <option value="Memberships"></option>
+                </select>
+                <label for="amt">Amount</label>
+                <input type="number">
+                <label for="due">Due Date</label>
+                <input type="date">
+            </form>
+        </section>
+
+        <!-- ADD GOAL -->
+        <section class="add-goal">
+            <form action="" class="add-goal-form">
+                <h2>Add goal</h2>
+                <label for="goal-name">Your financial goal:</label>
+                <input type="text">
+                <label for="goal-amt">Goal Amount</label>
+                <input type="number">
+                <label for="goal-date">Goal Date</label>
+                <input type="date">
+            </form>
+        </section>
+
+        <!-- ADD UNEXPECTED EXPENSE -->
+        <section class="add-unexpected-expense">
+            <form action="">
+                <h2>Add unexpected expense</h2>
+                <label for="unexpected-expense-name">Unexpected expense: </label>
+                <input type="text">
+                <label for="unexpected-amount">Unexpected expense amount: $</label>
+                <input type="number">
+                </label>
+            </form>
+        </section>
+    
+    </section>
+
+
+    <!-- CURRENT MONTH -->
+    <section id="current-month-page">
+        <h1> { Current Month Here } </h1>
+        <!-- FIXED EXPENSES -->
+        <section class="current-fixed">
+            <h2>Fixed Expenses</h2>
+            <ul>
+                <li>{fixed expenses will be added here}</li>
+                <li>
+                    <p>{ex: Rent}</p>
+                    <p>{ex: 1200}</p>
+                    <p>{ex: 30}</p>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- UNEXPECTED EXPENSES -->
+        <section class="current-unexpected">
+            <h2>Unexpected Expenses</h2>
+            <ul>
+                <li>{unexpected expenses will be added here}</li>
+                <li>
+                    <p>{ex: BFF's bday}</p>
+                    <p>{ex: 55}</p>
+                    <p>{ex: 18}</p>
+                </li>
+                <li>
+                    <p>{ex: fix  laptop screen}</p>
+                    <p>{ex: 55}</p>
+                    <p>{ex: 18}</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- SUMMARY -->
+        <h1>Current Summary</h1>
+        <p>{Current Month}'s budget: ${3000}</p>
+        <p>Total spent: ${2800}</p>
+        <p>Remaining amount: ${200}</p>
+    
+    </section>
+
+    <!-- GOALS -->
+    <section id="goals-page">
+        <h1>My financial Goals</h1>
+
+        <!-- REMAINING GOALS -->
+        <section class="remaining-goals">
+                <h2>Remaning goals</h2>
+                <ul>
+                    <li>{remaining goals will be added here}</li>
+                    <li>
+                        <p>{ex: Peru Trip}</p>
+                        <p>{ex: 1800}</p>
+                        <p>{ex: March 2020}</p>
+                    </li>
+                    <li>
+                        <p>{ex: Nikon D3500 DSLR}</p>
+                        <p>{ex: 400}</p>
+                        <p>{ex: February 2020}</p>
+                    </li>
+                </ul>
+            </section>
+
+        <!-- GOALS REACHED -->
+        <section class="goals">
+            <h2>Remaning goals</h2>
+            <ul>
+                <li>{remaining goals will be added here}</li>
+                <li>
+                    <p>{ex: Peru Trip}</p>
+                    <p>{ex: 1800}</p>
+                    <p>{ex: March 2020}</p>
+                </li>
+                <li>
+                    <p>{ex: Nikon D3500 DSLR}</p>
+                    <p>{ex: 400}</p>
+                    <p>{ex: February 2020}</p>
+                </li>
+            </ul>
+        </section>
+        
+    </section>
+
+    </body>
+</html>
