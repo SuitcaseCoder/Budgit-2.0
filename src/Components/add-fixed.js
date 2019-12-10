@@ -1,12 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 class AddFixed extends Component {
-    constructor(){
-        super();
-        this.state = {
-
-        }
-    }
 
     render(){
         return(
@@ -14,19 +8,18 @@ class AddFixed extends Component {
             <form action="" class="add-expense-form">
                 <h2>Add fixed expense</h2>
                 <select name="fixed-expenses" id="">
-                    <option value="Mortgage/Rent"></option>
-                    <option value="Home/Rent insurance"></option>
-                    <option value="Auto Insurance"></option>
-                    <option value="Health Insurance"></option>
-                    <option value="Electricity"></option>
-                    <option value="Groceries/toiletries/other essentials"></option>
-                    <option value="Fuel"></option>
-                    <option value="Student loan payments"></option>
-                    <option value="Cable/Internet"></option>
-                    <option value="Auto"></option>
-                    <option value="Streaming Services"></option>
-                    <option value="TV/Internet"></option>
-                    <option value="Memberships"></option>
+                    <option value="Mortgage/Rent">Mortage/Rent</option>
+                    <option value="Home/Rent insurance">Home/Renters Insurance</option>
+                    <option value="Auto Insurance">Auto Insurance</option>
+                    <option value="Health Insurance">Health Insurance</option>
+                    <option value="Electricity">Electricity</option>
+                    <option value="Groceries/toiletries/other essentials">Groceries</option>
+                    <option value="Fuel">Fuel</option>
+                    <option value="Student loan payments">Student Loan Payment</option>
+                    <option value="Auto">Car</option>
+                    <option value="Streaming Services">Streaming Services</option>
+                    <option value="TV/Internet">TV/Internet</option>
+                    <option value="Memberships">Memberships</option>
                 </select>
                 <label for="amt">Amount</label>
                 <input type="number" />

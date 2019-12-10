@@ -1,14 +1,6 @@
-import React from 'react';
-
-import React from 'react';
+import React, { Component } from 'react';
 
 class AddGoal extends Component {
-    constructor(){
-        super();
-        this.state = {
-
-        }
-    }
 
     render(){
         return(

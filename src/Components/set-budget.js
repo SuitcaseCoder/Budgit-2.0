@@ -1,12 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 class SetBudget extends Component {
-    constructor(){
-        super();
-        this.state = {
-
-        }
-    }
 
     render(){
         return(

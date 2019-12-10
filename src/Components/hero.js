@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 class Hero extends Component {
     constructor(){
@@ -15,7 +15,7 @@ class Hero extends Component {
                 <h1>Budgit 2.0</h1>
                 <h2>An easy way to set financial goals and stay on budget</h2>
                 <button>Sign Up Now</button>
-                <a href="">Already have an account?</a>
+                <p>Already have an account?</p>
             </div>
         </section>
         )

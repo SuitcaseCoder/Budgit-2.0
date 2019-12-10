@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 class RemainingGoals extends Component {
     constructor(){
@@ -13,16 +13,16 @@ class RemainingGoals extends Component {
             <section class="goals-reached">
             <h2>Goals reached</h2>
             <ul>
-                <li>remaining goals will be added here</li>
+                <li> goals reached will be added here</li>
                 <li>
                     <p>Peru Trip</p>
-                    <p>{ex: 1800}</p>
-                    <p>{ex: March 2020}</p>
+                    <p>amount: $1800</p>
+                    <p>date: March 2020</p>
                 </li>
                 <li>
-                    <p>{ex: Nikon D3500 DSLR}</p>
-                    <p>{ex: 400}</p>
-                    <p>{ex: February 2020}</p>
+                    <p>Nikon D3500 DSLR</p>
+                    <p>amount: $400</p>
+                    <p>date: February 2020}</p>
                 </li>
             </ul>
         </section>
